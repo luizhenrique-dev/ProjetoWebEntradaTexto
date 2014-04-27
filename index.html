@@ -6,9 +6,16 @@
     <script src="script.js"></script>
   </head>
 
-  <body>
+  <body onload="init();">
     <h1>Digite o texto desejado abaixo</h1>
-    <textarea id="texto" rows="5" cols="40" maxlenght="200" onkeyup="validar_caracteres()"></textarea>
+    <form name="test" id="test">
+      <textarea id="text" name="text" autocomplete="off" rows="5" cols="40" maxlenght="200" onkeypress="validar_caracteres()"></textarea>
+      <label id="contador"></label>
+    </form>
+    <div class="shadow" id="shadow">
+    <div class="output" id="output">
+    </div>
+    </div>
   </body>
 
 </html>
